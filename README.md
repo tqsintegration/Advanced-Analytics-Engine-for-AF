@@ -3,6 +3,8 @@ Advanced-Calculation-Engine-for-AF is a tool that allows developers to create an
 
 INSERT DEMO GIF HERE? INSERT DEMO GIF HERE? INSERT DEMO GIF HERE?
 
+![](images/)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine. See deployment for notes on how to deploy Advanced-Calculation-Engine-for-AF within PI System Explorer.
@@ -33,6 +35,8 @@ INSERT EXAMPLE GIF HERE - INSERT EXAMPLE GIF HERE - INSERT EXAMPLE GIF HERE
 ## Graphical User Interface
 
 INSERT GRAPHICAL USER INTERFACE LAYOUT PITCTURE HERE - INSERT GRAPHICAL USER INTERFACE LAYOUT PITCTURE HERE
+
+![](images/ControlLayout.JPG)
 
 Describe what each button/feature on the GUI does, etc.
 
