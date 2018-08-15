@@ -3,6 +3,8 @@ Advanced-Calculation-Engine-for-AF is a tool that allows developers to create an
 
 INSERT DEMO GIF HERE? INSERT DEMO GIF HERE? INSERT DEMO GIF HERE?
 
+![](images/DemoRe.gif)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine. See deployment for notes on how to deploy Advanced-Calculation-Engine-for-AF within PI System Explorer.
@@ -17,12 +19,8 @@ Follow the step-by-step procedure below to install the software.
 
 1. Download the AACE.Main.dll file.
 
-INSERT PICTURE HERE IF NECESSARY? - INSERT PICTURE HERE IF NECESSARY? - INSERT PICTURE HERE IF NECESSARY?
-
 2. Install through the command prompt using the following command.  
 "%PIHOME%\AF\regplugin.exe" "Insert Install Path Here\AACE.Main.dll"
-
-INSERT PICTURE HERE IF NECESSARY? INSERT PICTURE HERE IF NECESSARY? INSERT PICTURE HERE IF NECESSARY?
 
 ## Deployment
 
@@ -37,6 +35,32 @@ INSERT GRAPHICAL USER INTERFACE LAYOUT PITCTURE HERE - INSERT GRAPHICAL USER INT
 ![](images/ControlLayout.JPG)
 
 Describe what each button/feature on the GUI does, etc.
+
+* **Insert Programming Language Button** allows the user to specify what programming language is going to be used. Currently available languages include C# and VB.NET.  
+
+* **Code Editor** provides text editing features such as syntax highlighting, code outlining, line numbers, IntelliPrompt UI, and many more.  
+
+* **Messages** displays error messages notifying user of errors found in the code editor and execution time if execution is successful.  
+* **Choose Plot or Data Grid Button**  allows the user to view a plot of returned values against time or a data grid showing name, time stamp, value, unit of measure (UOM), and calculation error notification (IsGood).  
+
+* **Recalculate Button**  takes the code written in the code editor and compiles it at runtime.  
+
+* **Chart/Grid View** displays a plot or data grid depending on the option chosen on the "Choose Plot or Data Grid" button.  
+
+* **Ok; Checkin Button** takes the code written in the code editor and checks in the language, change date, publisher, and code into code 
+* **Cancel Button**  cancels any operations and closes the graphical user interface.  
+
+* **About Button**  redirects the user to the software's about section.
+
+* **Sample Library Button** redirects the user to a source where they can find samples of code that perform specific functions.  
+
+* **Help Button** redirects the user to help source.  
+
+* **Number of Points Field**  allows the user to specify the amount of points to display.  
+
+* **End Time Field**  allows the user to specify the rightmost boundary of the time frame being examined.  
+
+* **Start Time Field**  allows the user to specify the leftmost boundary of the time frame being examined.  
 
 ## Built With
 
