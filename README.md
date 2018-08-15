@@ -47,7 +47,8 @@ Describe what each button/feature on the GUI does, etc.
 
 * **Chart/Grid View** displays a plot or data grid depending on the option chosen on the "Choose Plot or Data Grid" button.  
 
-* **Ok; Checkin Button** takes the code written in the code editor and checks in the language, change date, publisher, and code into code 
+* **Ok; Checkin Button** takes the code written in the code editor and checks in the language, change date, publisher, and code.  
+
 * **Cancel Button**  cancels any operations and closes the graphical user interface.  
 
 * **About Button**  redirects the user to the software's about section.
