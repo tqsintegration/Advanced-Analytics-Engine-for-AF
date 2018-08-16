@@ -2,7 +2,9 @@
 
 Advanced-Calculation-Engine-for-AF is a tool that allows developers to create and manage calculations using data from Osisoft's PI System within PI Asset Framework.
 
-![](images/Demo.gif)
+<p align="center">
+  <img src="images/Demo75.gif">
+</p>
 
 ## Getting Started
 
@@ -27,20 +29,33 @@ The AF Advanced Calculation Engine may be accessed via the PI System Explorer by
 
 ## Graphical User Interface
 
-INSERT GRAPHICAL USER INTERFACE LAYOUT PITCTURE HERE - INSERT GRAPHICAL USER INTERFACE LAYOUT PITCTURE HERE
-
-![](images/ControlLayout.JPG)
-
-Describe what each button/feature on the GUI does, etc.
+<p align="center">
+  <img src="images/ControlLayout.JPG">
+</p>
 
 * **Insert Programming Language Button** allows the user to specify what programming language is going to be used. Currently available languages include C# and VB.NET.
 
-![](images/LanguageButton.gif)
+<p align="center">
+  <img src="images/LanguageButton75.gif">
+</p>
 
 * **Code Editor** provides text editing features such as syntax highlighting, code outlining, line numbers, IntelliPrompt UI, and many more.  
 
-* **Messages** displays error messages notifying user of errors found in the code editor and execution time if execution is successful.  
-* **Choose Plot or Data Grid Button**  allows the user to view a plot of returned values against time or a data grid showing name, time stamp, value, unit of measure (UOM), and calculation error notification (IsGood).  
+<p align="center">
+  <img src="images/CodeEditing75.gif">
+</p>
+
+* **Messages** displays error messages notifying user of errors found in the code editor and execution time if execution is successful. 
+
+<p align="center">
+  <img src="images/messages75.gif">
+</p>
+
+* **Choose Plot or Data Grid Button**  allows the user to view a plot of returned values against time or a data grid showing name, time stamp, value, unit of measure (UOM), and calculation error notification (IsGood). 
+
+<p align="center">
+  <img src="images/fields75.gif">
+</p>
 
 * **Recalculate Button**  takes the code written in the code editor and compiles it at runtime.  
 
@@ -64,8 +79,9 @@ Describe what each button/feature on the GUI does, etc.
 
 ## Built With
 
-* [something](https://www.actiprosoftware.com/products/controls/wpf/syntaxeditor)
-
+* Windows 7
+* .NET Framework 4.5.2
+* C#
 
 ## Versioning
 
