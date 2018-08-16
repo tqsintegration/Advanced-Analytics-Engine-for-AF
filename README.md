@@ -3,7 +3,7 @@
 Advanced-Calculation-Engine-for-AF is a tool that allows developers to create and manage calculations using data from Osisoft's PI System within PI Asset Framework.
 
 <p align="center">
-  <img src="images/Demo.gif">
+  <img src="images/Demo75.gif">
 </p>
 
 ## Getting Started
@@ -36,25 +36,25 @@ The AF Advanced Calculation Engine may be accessed via the PI System Explorer by
 * **Insert Programming Language Button** allows the user to specify what programming language is going to be used. Currently available languages include C# and VB.NET.
 
 <p align="center">
-  <img src="images/LanguageButton.gif">
+  <img src="images/LanguageButton75.gif">
 </p>
 
 * **Code Editor** provides text editing features such as syntax highlighting, code outlining, line numbers, IntelliPrompt UI, and many more.  
 
 <p align="center">
-  <img src="images/CodeEditing.gif">
+  <img src="images/CodeEditing75.gif">
 </p>
 
 * **Messages** displays error messages notifying user of errors found in the code editor and execution time if execution is successful. 
 
 <p align="center">
-  <img src="images/messages2.gif">
+  <img src="images/messages75.gif">
 </p>
 
 * **Choose Plot or Data Grid Button**  allows the user to view a plot of returned values against time or a data grid showing name, time stamp, value, unit of measure (UOM), and calculation error notification (IsGood). 
 
 <p align="center">
-  <img src="images/fields.gif">
+  <img src="images/fields75.gif">
 </p>
 
 * **Recalculate Button**  takes the code written in the code editor and compiles it at runtime.  
