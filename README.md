@@ -90,17 +90,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
   * [Sub-heading](#sub-heading-2)
     + [Sub-sub-heading](#sub-sub-heading-2)
 - [Heading](#heading-3)
-  * [Sub-heading](#sub-heading-3)
-    + [Sub-sub-heading](#sub-sub-heading-3)
+
 - [Heading](#heading-4)
-  * [Sub-heading](#sub-heading-4)
-    + [Sub-sub-heading](#sub-sub-heading-4)
+
 - [Heading](#heading-5)
-  * [Sub-heading](#sub-heading-5)
-    + [Sub-sub-heading](#sub-sub-heading-5)
+
 - [Heading](#heading-6)
-  * [Sub-heading](#sub-heading-6)
-    + [Sub-sub-heading](#sub-sub-heading-6)
+
 
 
 # Heading levels
@@ -149,46 +145,17 @@ This is an h3 heading
 
 This is an h1 heading
 
-### Sub-heading
-
-This is an h2 heading
-
-#### Sub-sub-heading
-
-This is an h3 heading
 
 ## Heading
 
 This is an h1 heading
 
-### Sub-heading
+## Heading
 
-This is an h2 heading
+This is an h1 heading
 
-#### Sub-sub-heading
-
-This is an h3 heading
 
 ## Heading
 
 This is an h1 heading
 
-### Sub-heading
-
-This is an h2 heading
-
-#### Sub-sub-heading
-
-This is an h3 heading
-
-## Heading
-
-This is an h1 heading
-
-### Sub-heading
-
-This is an h2 heading
-
-#### Sub-sub-heading
-
-This is an h3 heading
