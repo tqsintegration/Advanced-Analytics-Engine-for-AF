@@ -41,8 +41,21 @@ The AF Advanced Calculation Engine may be accessed via the PI System Explorer by
 
 * **Code Editor** provides text editing features such as syntax highlighting, code outlining, line numbers, IntelliPrompt UI, and many more.  
 
-* **Messages** displays error messages notifying user of errors found in the code editor and execution time if execution is successful.  
-* **Choose Plot or Data Grid Button**  allows the user to view a plot of returned values against time or a data grid showing name, time stamp, value, unit of measure (UOM), and calculation error notification (IsGood).  
+<p align="center">
+  <img src="images/CodeEditing.gif">
+</p>
+
+* **Messages** displays error messages notifying user of errors found in the code editor and execution time if execution is successful. 
+
+<p align="center">
+  <img src="images/messages2.gif">
+</p>
+
+* **Choose Plot or Data Grid Button**  allows the user to view a plot of returned values against time or a data grid showing name, time stamp, value, unit of measure (UOM), and calculation error notification (IsGood). 
+
+<p align="center">
+  <img src="images/fields.gif">
+</p>
 
 * **Recalculate Button**  takes the code written in the code editor and compiles it at runtime.  
 
