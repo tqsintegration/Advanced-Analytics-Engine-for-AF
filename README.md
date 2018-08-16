@@ -1,4 +1,5 @@
 # Advanced-Calculation-Engine-for-AF
+
 Advanced-Calculation-Engine-for-AF is a tool that allows developers to create and manage calculations using data from Osisoft's PI System within PI Asset Framework.
 
 ![](images/Demo.gif)
@@ -63,9 +64,8 @@ Describe what each button/feature on the GUI does, etc.
 
 ## Built With
 
-* [SyntaxEditor](https://www.actiprosoftware.com/products/controls/wpf/syntaxeditor) - for the code editor
-* [Material Design in XAML Toolkit](http://materialdesigninxaml.net/) - for the buttons and lists
-* [OxyPlot](http://www.oxyplot.org/) - for chart functionality
+* [something](https://www.actiprosoftware.com/products/controls/wpf/syntaxeditor)
+
 
 ## Versioning
 
