@@ -2,7 +2,9 @@
 
 Advanced-Calculation-Engine-for-AF is a tool that allows developers to create and manage calculations using data from Osisoft's PI System within PI Asset Framework.
 
-![](images/Demo.gif)
+<p align="center">
+  <img src="images/Demo.gif">
+</p>
 
 ## Getting Started
 
@@ -27,15 +29,15 @@ The AF Advanced Calculation Engine may be accessed via the PI System Explorer by
 
 ## Graphical User Interface
 
-INSERT GRAPHICAL USER INTERFACE LAYOUT PITCTURE HERE - INSERT GRAPHICAL USER INTERFACE LAYOUT PITCTURE HERE
-
-![](images/ControlLayout.JPG)
-
-Describe what each button/feature on the GUI does, etc.
+<p align="center">
+  <img src="images/ControlLayout.JPG">
+</p>
 
 * **Insert Programming Language Button** allows the user to specify what programming language is going to be used. Currently available languages include C# and VB.NET.
 
-![](images/LanguageButton.gif)
+<p align="center">
+  <img src="images/LanguageButton.gif">
+</p>
 
 * **Code Editor** provides text editing features such as syntax highlighting, code outlining, line numbers, IntelliPrompt UI, and many more.  
 
@@ -79,68 +81,3 @@ We use [Bitbucket](https://bitbucket.org/) for versioning.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-- [Heading](#heading)
-  * [Sub-heading](#sub-heading)
-  * [Sub-heading](#sub-heading)
-  
-- [Heading](#heading-1)
-
-- [Heading](#heading-2)
-
-- [Heading](#heading-3)
-
-- [Heading](#heading-4)
-
-- [Heading](#heading-5)
-
-- [Heading](#heading-6)
-
-
-
-# Heading levels
-
-> This is a fixture to test heading levels
-
-<!-- toc -->
-
-## Heading
-
-This is an h1 heading
-
-### Sub-heading
-
-This is an h2 heading
-
-### Sub-heading
-
-This is an h2 heading
-
-## Heading
-
-This is an h1 heading
-
-
-## Heading
-
-This is an h1 heading
-
-
-## Heading
-
-This is an h1 heading
-
-
-## Heading
-
-This is an h1 heading
-
-## Heading
-
-This is an h1 heading
-
-
-## Heading
-
-This is an h1 heading
-
