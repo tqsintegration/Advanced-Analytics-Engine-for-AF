@@ -64,8 +64,9 @@ Describe what each button/feature on the GUI does, etc.
 
 ## Built With
 
-* [something](https://www.actiprosoftware.com/products/controls/wpf/syntaxeditor)
-
+* Windows 7
+* .NET Framework 4.5.2
+* C#
 
 ## Versioning
 
@@ -78,3 +79,116 @@ We use [Bitbucket](https://bitbucket.org/) for versioning.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+- [Heading](#heading)
+  * [Sub-heading](#sub-heading)
+    + [Sub-sub-heading](#sub-sub-heading)
+- [Heading](#heading-1)
+  * [Sub-heading](#sub-heading-1)
+    + [Sub-sub-heading](#sub-sub-heading-1)
+- [Heading](#heading-2)
+  * [Sub-heading](#sub-heading-2)
+    + [Sub-sub-heading](#sub-sub-heading-2)
+- [Heading](#heading-3)
+  * [Sub-heading](#sub-heading-3)
+    + [Sub-sub-heading](#sub-sub-heading-3)
+- [Heading](#heading-4)
+  * [Sub-heading](#sub-heading-4)
+    + [Sub-sub-heading](#sub-sub-heading-4)
+- [Heading](#heading-5)
+  * [Sub-heading](#sub-heading-5)
+    + [Sub-sub-heading](#sub-sub-heading-5)
+- [Heading](#heading-6)
+  * [Sub-heading](#sub-heading-6)
+    + [Sub-sub-heading](#sub-sub-heading-6)
+
+
+# Heading levels
+
+> This is a fixture to test heading levels
+
+<!-- toc -->
+
+## Heading
+
+This is an h1 heading
+
+### Sub-heading
+
+This is an h2 heading
+
+#### Sub-sub-heading
+
+This is an h3 heading
+
+## Heading
+
+This is an h1 heading
+
+### Sub-heading
+
+This is an h2 heading
+
+#### Sub-sub-heading
+
+This is an h3 heading
+
+## Heading
+
+This is an h1 heading
+
+### Sub-heading
+
+This is an h2 heading
+
+#### Sub-sub-heading
+
+This is an h3 heading
+
+## Heading
+
+This is an h1 heading
+
+### Sub-heading
+
+This is an h2 heading
+
+#### Sub-sub-heading
+
+This is an h3 heading
+
+## Heading
+
+This is an h1 heading
+
+### Sub-heading
+
+This is an h2 heading
+
+#### Sub-sub-heading
+
+This is an h3 heading
+
+## Heading
+
+This is an h1 heading
+
+### Sub-heading
+
+This is an h2 heading
+
+#### Sub-sub-heading
+
+This is an h3 heading
+
+## Heading
+
+This is an h1 heading
+
+### Sub-heading
+
+This is an h2 heading
+
+#### Sub-sub-heading
+
+This is an h3 heading
