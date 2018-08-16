@@ -24,8 +24,6 @@ Follow the step-by-step procedure below to install the software.
 
 The AF Advanced Calculation Engine may be accessed via the PI System Explorer by configuring the attribute of an element to be referenced as a AF Advanced Calculation Engine data reference. Click on settings to access the user-friendly graphical user interface.
 
-INSERT EXAMPLE GIF HERE - INSERT EXAMPLE GIF HERE - INSERT EXAMPLE GIF HERE
-
 ## Graphical User Interface
 
 INSERT GRAPHICAL USER INTERFACE LAYOUT PITCTURE HERE - INSERT GRAPHICAL USER INTERFACE LAYOUT PITCTURE HERE
@@ -34,7 +32,9 @@ INSERT GRAPHICAL USER INTERFACE LAYOUT PITCTURE HERE - INSERT GRAPHICAL USER INT
 
 Describe what each button/feature on the GUI does, etc.
 
-* **Insert Programming Language Button** allows the user to specify what programming language is going to be used. Currently available languages include C# and VB.NET.  
+* **Insert Programming Language Button** allows the user to specify what programming language is going to be used. Currently available languages include C# and VB.NET.
+
+![](images/LanguageButton.gif)
 
 * **Code Editor** provides text editing features such as syntax highlighting, code outlining, line numbers, IntelliPrompt UI, and many more.  
 
