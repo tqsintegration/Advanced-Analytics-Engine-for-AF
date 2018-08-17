@@ -12,7 +12,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-PI AF Client 2015 R2. Installation instructions can be found [here](https://livelibrary.osisoft.com).
+* PI AF Client 2015 R2. Installation instructions can be found [here](https://livelibrary.osisoft.com).
+* .NET Framework 4.5.2
 
 ### Installing
 
@@ -77,11 +78,10 @@ The AF Advanced Calculation Engine may be accessed via the PI System Explorer by
 
 * **Start Time Field**  allows the user to specify the leftmost boundary of the time frame being examined.  
 
-## Built With
+## Contributing
+Please make sure that you read our general [Contribution Guidelines](CODE-OF-CONDUCT.md) and agree with them. These guidelines apply to all TQS Integration projects on GitHub.
 
-* Windows 7
-* .NET Framework 4.5.2
-* C#
+We welcome everyone to share enhancement requests, issues and contributions. While all contributions will be considered by our team, we recommend everyone perform their own reviews on contributions prior to adopting them. We do not manage, test or verify functionality of contributions, and users adopt them at their own risk. 
 
 ## Versioning
 
