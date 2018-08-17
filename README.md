@@ -79,7 +79,7 @@ The AF Advanced Calculation Engine may be accessed via the PI System Explorer by
 * **Start Time Field**  allows the user to specify the leftmost boundary of the time frame being examined.  
 
 ## Contributing
-Please make sure that you read our general [Contribution Guidelines](CODE-OF-CONDUCT.md) and agree with them. These guidelines apply to all TQS Integration projects on GitHub.
+Please make sure that you read our general [Contribution Guidelines](CODE_OF_CONDUCT.md) and agree with them. These guidelines apply to all TQS Integration projects on GitHub.
 
 We welcome everyone to share enhancement requests, issues and contributions. While all contributions will be considered by our team, we recommend everyone perform their own reviews on contributions prior to adopting them. We do not manage, test or verify functionality of contributions, and users adopt them at their own risk. 
 
