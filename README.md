@@ -6,6 +6,8 @@ Advanced-Calculation-Engine-for-AF is a tool that allows developers to create an
   <img src="images/Demo75.gif">
 </p>
 
+This Github repository is to host samples, documentation and to allow TQS Integration to publish ongoing code samples that users might wish to test or deploy. The Advanced Calculation Engine for AF is a licensed product, and for pricing details on purchasing the software, please contact us at [TQS Integration](mailto:sales@tqsintegration.com), or visit our [website](www.tqsintegration.com) for further details. 
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine. See deployment for notes on how to deploy Advanced-Calculation-Engine-for-AF within PI System Explorer.
