@@ -85,7 +85,7 @@ We welcome everyone to share enhancement requests, issues and contributions. Whi
 
 ## Versioning
 
-We use [Bitbucket](https://bitbucket.org/) for versioning.
+TQS Integration supports and licenses software developed for regulated industries, and as such, all software development is performed under our strict software development lifecycle process. For details, please visit our website [TQSIntegration](https://www.tqsintegration.com/).
 
 ## Authors
 
