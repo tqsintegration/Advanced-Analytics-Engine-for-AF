@@ -91,7 +91,7 @@ TQS Integration supports and licenses software developed for regulated industrie
 
 ## Authors
 
-Holger Amort
+Holger Amort<br/>
 Pablo Gomez
 
 ## License
