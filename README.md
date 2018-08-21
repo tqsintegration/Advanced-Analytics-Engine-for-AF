@@ -91,7 +91,8 @@ TQS Integration supports and licenses software developed for regulated industrie
 
 ## Authors
 
-[TQSIntegration](https://www.tqsintegration.com/)
+Holger Amort
+Pablo Gomez
 
 ## License
 Copyright 2018 TQS Integration, LLC.
