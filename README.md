@@ -89,7 +89,8 @@ We use [Bitbucket](https://bitbucket.org/) for versioning.
 
 ## Authors
 
-[TQSIntegration](https://www.tqsintegration.com/)
+Holger Amort
+Pablo Gomez
 
 ## License
 
