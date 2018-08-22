@@ -19,34 +19,6 @@ attribute is an AFAttribute. (Currently set to null)
 
 Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
 
-The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
-Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
-of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
-```C#
-using OSIsoft.AF.Asset;
-using OSIsoft.AF.Time;
-using AACE.Data.Model;
-using AACE.Extension;
-using System;
-
-namespace AFCalculationEngine
-{
-    public class RealTime
-    {
-        private Local _local;
-		public RealTime(Local local)
-        {
-            _local=local;
-        }
-        public AFValues Update(Context context, AFTimeRange timeRange,
-			int n, AFValues values)
-        {
-            return Data.GetConstantValues(timeRange,n,5);
-        }
-    }
-}
-```
-
 #### Creating Simulated Heartbeat Values
 ##### Decription:  
 
@@ -68,31 +40,6 @@ attribute is an AFAttribute. (Currently set to null)
 
 Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
 
-```C#
-using OSIsoft.AF.Asset;
-using OSIsoft.AF.Time;
-using AACE.Data.Model;
-using AACE.Extension;
-using System;
-
-namespace AFCalculationEngine
-{
-    public class RealTime
-    {
-        private Local _local;
-		public RealTime(Local local)
-        {
-            _local=local;
-        }
-        public AFValues Update(Context context, AFTimeRange timeRange,
-			int n, AFValues values)
-        {
-            return Data.GetHeartBeatValues(timeRange, n);
-        }
-    }
-}
-```
-
 #### Creating Random Values
 ##### Decription:  
 
@@ -112,31 +59,6 @@ attribute is an AFAttribute. (Currently set to null)
 ##### Example:  
 
 Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
-
-```C#
-using OSIsoft.AF.Asset;
-using OSIsoft.AF.Time;
-using AACE.Data.Model;
-using AACE.Extension;
-using System;
-
-namespace AFCalculationEngine
-{
-    public class RealTime
-    {
-        private Local _local;
-		public RealTime(Local local)
-        {
-            _local=local;
-        }
-        public AFValues Update(Context context, AFTimeRange timeRange,
-			int n, AFValues values)
-        {
-            return Data.GetRandomValues(timeRange,n);
-        }
-    }
-}
-```
 
 #### Creating Gaussian Noise
 ##### Decription:  
@@ -160,31 +82,6 @@ attribute is an AFAttribute. (Currently set to null)
 
 Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
 
-```C#
-using OSIsoft.AF.Asset;
-using OSIsoft.AF.Time;
-using AACE.Data.Model;
-using AACE.Extension;
-using System;
-
-namespace AFCalculationEngine
-{
-    public class RealTime
-    {
-        private Local _local;
-		public RealTime(Local local)
-        {
-            _local=local;
-        }
-        public AFValues Update(Context context, AFTimeRange timeRange,
-			int n, AFValues values)
-        {
-            return Data.GetGaussianRandomValues(timeRange,n,0,3);
-        }
-    }
-}
-```
-
 #### Creating Sinusoidal Values
 ##### Decription:  
 Returns AFValues with values generated from a sine wave.
@@ -206,32 +103,6 @@ attribute is an AFAttribute. (Currently set to null)
 ##### Example:  
 
 Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
-
-```C#
-using OSIsoft.AF.Asset;
-using OSIsoft.AF.Time;
-using AACE.Data.Model;
-using AACE.Extension;
-using System;
-
-namespace AFCalculationEngine
-{
-    public class RealTime
-    {
-        private Local _local;
-		public RealTime(Local local)
-        {
-            _local=local;
-        }
-        public AFValues Update(Context context, AFTimeRange timeRange,
-			int n, AFValues values)
-        {
-            return Data.GetSinusoidValues(timeRange,n,100,4,
-				TimeSpan.FromSeconds(0));
-        }
-    }
-}
-```
 
 #### Creating Seesaw (or Sawtooth) Values
 ##### Decription:  
@@ -255,31 +126,6 @@ attribute is an AFAttribute. (Currently set to null)
 ##### Example:  
 
 Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
-
-```C#
-using OSIsoft.AF.Asset;
-using OSIsoft.AF.Time;
-using AACE.Data.Model;
-using AACE.Extension;
-using System;
-
-namespace AFCalculationEngine
-{
-    public class RealTime
-    {
-        private Local _local;
-		public RealTime(Local local)
-        {
-            _local=local;
-        }
-        public AFValues Update(Context context, AFTimeRange timeRange,
-			int n, AFValues values)
-        {
-            return Data.GetRectangularValues(timeRange,n,TimeSpan.FromSeconds(1),TimeSpan.FromSeconds(3),5, TimeSpan.FromSeconds(5));
-        }
-    }
-}
-```
 
 #### Creating Rectangular Values
 ##### Decription:  
@@ -305,43 +151,6 @@ attribute is an AFAttribute. (Currently set to null)
 
 Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
 
-```C#
-using OSIsoft.AF.Asset;
-using OSIsoft.AF.Time;
-using AACE.Data.Model;
-using AACE.Extension;
-using System;
-
-using OSIsoft.AF.Asset;
-using OSIsoft.AF.Time;
-using AACE.Data.Model;
-using AACE.Extension;
-using System;
-using System.Linq;
-
-namespace AFCalculationEngine
-{
-    public class RealTime
-    {
-        private Local _local;
-		public RealTime(Local local)
-        {
-            _local=local;
-
-        }
-        public AFValues Update(Context context, AFTimeRange timeRange,
-			int n, AFValues values)
-        {
-			var newValues=Data.GetRectangularValues(
-				timeRange,
-				n,TimeSpan.FromMinutes(10),TimeSpan.FromMinutes(5),100,
-				TimeSpan.Zero,null);
-            return  newValues;
-        }
-    }
-}
-```
-
 #### Creating Random Walk Values
 ##### Decription:  
 
@@ -363,36 +172,3 @@ attribute is an AFAttribute. (Currently set to null)
 ##### Example:  
 
 Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
-
-```C#
-using OSIsoft.AF.Asset;
-using OSIsoft.AF.Time;
-using AACE.Data.Model;
-using AACE.Extension;
-using System;
-using System.Linq;
-
-namespace AFCalculationEngine
-{
-    public class RealTime
-    {
-        private Local _local;
-		private double _previousValue;
-		public RealTime(Local local)
-        {
-            _local=local;
-			_previousValue=0;
-        }
-        public AFValues Update(Context context, AFTimeRange timeRange,
-			int n, AFValues values)
-        {
-			var newValues=Data.GetRandomWalkValues(
-				timeRange,
-				n,
-			_previousValue,0,100,null);
-			_previousValue=Convert.ToDouble(newValues.Last().Value.ToString());
-            return  newValues;
-        }
-    }
-}
-```
