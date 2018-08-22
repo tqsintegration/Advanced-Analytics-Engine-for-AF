@@ -24,17 +24,27 @@ Namespace AFCalculationEngine
     Public Class RealTime
 #Region "Private Fields"
         Private _local As Local
+        Private ACE_Raw_Date As AFAttribute
+        Private ACE_Raw_Phosphate As AFAttribute
+        Private ACE_Raw_Glucose As AFAttribute
+        Private ACE_Raw_Acetate As AFAttribute
 #End Region
         Public Sub New(ByVal local As Local)
 #Region "Constructor"
             _local = local
+            ACE_Raw_Date = _local.Attributes`["ACE_Raw_Date"`]
+            ACE_Raw_Phosphate = _local.Attributes`["ACE_Raw_Phosphate"`]
+            ACE_Raw_Glucose = _local.Attributes`["ACE_Raw_Glucose"`]
+            ACE_Raw_Acetate = _local.Attributes`["ACE_Raw_Acetate"`]
 #End Region
         End Sub
 
         Public Function Update(ByVal context As Context, ByVal timeRange As AFTimeRange, 
             ByVal n As Integer, ByVal values As AFValues) As AFValues
 #Region "Function"
+            ' 
             Return Data.GetHeartBeatValues(timeRange,n)
+            '
 #End Region
         End Function
     End Class
@@ -64,11 +74,12 @@ PI Alias = AF Attribute
 
 | PI-ACE  | AF Advanced Calculation Engine |
 | ------------- | ------------- |
+||Private _local As Local
 |Private ACE_Raw_Date As PIACEPoint|Private ACE_Raw_Date As AFAttribute|
 |Private ACE_Raw_Phosphate As PIACEPoint|Private ACE_Raw_Phosphate As AFAttribute|
 |Private ACE_Raw_Glucose As PIACEPoint|Private ACE_Raw_Glucose As AFAttribute|
 |Private ACE_Raw_Acetate As PIACEPoint|Private ACE_Raw_Acetate As AFAttribute|
-||Private _local As Local
+
 
 ## Region: Constructor
 
@@ -83,9 +94,10 @@ Mappings to the element attributes is perfomed using the Local object:
 
 | PI-ACE  | AF Advanced Calculation Engine |
 | ------------- | ------------- |
+||_local = local|
 |ACE_Raw_Date = GetPIACEPoint("ACE_Raw_Date")|ACE_Raw_Date = _local.Attributes`["ACE_Raw_Date"`]|
 |ACE_Raw_Phosphate = GetPIACEPoint("ACE_Raw_Phosphate")|ACE_Raw_Phosphate = _local.Attributes`["ACE_Raw_Phosphate"`]|
-|ACE_Raw_Glucose = GetPIACEPoint("ACE_Raw_Glucose") |ACE_Raw_Glucose = _local.Attributes`["ACE_Raw_Glucose"`] |
+|ACE_Raw_Glucose = GetPIACEPoint("ACE_Raw_Glucose") |ACE_Raw_Glucose = _local.Attributes`["ACE_Raw_Glucose"`]|
 |ACE_Raw_Acetate = GetPIACEPoint("ACE_Raw_Acetate")|ACE_Raw_Acetate = _local.Attributes`["ACE_Raw_Acetate"`]|
 
 ## Region: Private Fields
