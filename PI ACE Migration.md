@@ -66,7 +66,7 @@ The namespaces have changed from PI-ACE - please use the new namespaces for impo
 
 ## Region: Private Fields
 
-PIACEPoint was a way to map module specific aliases to a field. This data type has been replaced by AF Attributes. It follow the following scheme:
+PIACEPoint was a way to map module specific aliases to a field. This data type has been replaced by AF Attributes. It follows the following scheme:
 
 PI Module = AF Element
 PI Alias = AF Attribute
@@ -89,8 +89,8 @@ Protected Overrides Sub InitializePIACEPoints()
 ...
 End Sub
 ```
-In the Advanced Caclulation Engine there is simply a construcotr that can be used to initialize private fields.
-Mappings to the element attributes is perfomed using the Local object:
+In the Advanced Calculation Engine there is simply a constructor that can be used to initialize private fields.
+Mappings to the element attributes is performed using the Local object:
 
 | PI-ACE  | AF Advanced Calculation Engine |
 | ------------- | ------------- |
@@ -112,7 +112,7 @@ End Sub
 
 This code can be moved into the function declaration.
 
-## Module dependent Initializationa and Termination
+## Module dependent Initialization and Termination
 Each PI ACE module contains the following startup and tear down routines:
 
 ```vb.net
@@ -131,3 +131,4 @@ End Sub
 
 These procedures are no longer required. If reuqired, dispoing of managed and unmanaged resoruce can be implemented using the IDisposable pattern.
 
+## PI ACE specific Properties, Methods and Functions
