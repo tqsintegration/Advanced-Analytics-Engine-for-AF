@@ -11,7 +11,7 @@ OSIsoft has transitioned most PI-SDK functionality into the AF-SDF with two exce
 To allow calls to the legacy system, functions to the MDB and PIBatchDB have been wrapped into NET classes that only have an AF-SDK dependency.
 
 Every Advanced Calculation Engine method will have the following format
-```vbnet
+```
 Imports OSIsoft.AF.Asset
 Imports OSIsoft.AF.Time
 Imports AACE.Data.Model
