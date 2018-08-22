@@ -15,7 +15,9 @@ numberOfValues is an integer that represents the number of points desired to be 
 value is an object desired to be constantly generated, i.e. a real number, a string, etc.  
 attribute is an AFAttribute. (Currently set to null)
 
-##### Example:  
+##### Example:
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
 
 The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
 Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
@@ -64,9 +66,8 @@ attribute is an AFAttribute. (Currently set to null)
 
 ##### Example:  
 
-The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
-Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
-of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
 ```C#
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
@@ -110,9 +111,8 @@ attribute is an AFAttribute. (Currently set to null)
 
 ##### Example:  
 
-The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
-Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
-of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
 ```C#
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
@@ -158,9 +158,8 @@ attribute is an AFAttribute. (Currently set to null)
 
 ##### Example:  
 
-The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
-Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
-of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
 ```C#
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
@@ -206,9 +205,8 @@ attribute is an AFAttribute. (Currently set to null)
 
 ##### Example:  
 
-The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
-Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
-of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
 ```C#
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
@@ -256,9 +254,8 @@ attribute is an AFAttribute. (Currently set to null)
 
 ##### Example:  
 
-The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
-Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
-of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
 ```C#
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
@@ -306,9 +303,8 @@ attribute is an AFAttribute. (Currently set to null)
 
 ##### Example:  
 
-The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
-Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
-of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
 ```C#
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
@@ -366,9 +362,8 @@ attribute is an AFAttribute. (Currently set to null)
 
 ##### Example:  
 
-The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
-Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
-of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
 ```C#
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
