@@ -12,11 +12,13 @@ To allow calls to the legacy system, functions to the MDB and PIBatchDB have bee
 
 Every Advanced Calculation Engine method will have the following format
 ```vb.net
+#Region "Imports"
 Imports OSIsoft.AF.Asset
 Imports OSIsoft.AF.Time
 Imports AACE.Data.Model
 Imports AACE.Extension
 Imports System
+#End Region
 
 Namespace AFCalculationEngine
     Public Class RealTime
@@ -33,7 +35,16 @@ Namespace AFCalculationEngine
     End Class
 End Namespace
 ```
-
 The namespace, class, method name and the parameter list will be always the same.
+
+## Region: Imports
+The namespaces have changed from PI-ACE - please use the new namespaces for import.<\br>
+| PI-ACE  | AF Advanced Calculation Engine |
+| ------------- | ------------- |
+| Imports OSIsoft.PI.ACE  |Imports OSIsoft.AF.Asset  |
+||Imports OSIsoft.AF.Time|
+||Imports AACE.Data.Model|
+||Imports AACE.Extension|
+||Imports System|
 
 
