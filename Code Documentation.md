@@ -174,3 +174,125 @@ attribute is an AFAttribute. (Currently set to null)
 ##### Example:  
 
 Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Getting Compresses AFValues
+##### Decription:  
+
+Returns the values of AFValues as AFValues.
+
+##### Usage: 
+```C#
+public static AFValues GetCompressed(this AFValues values, Local local)
+```
+
+##### Parameters:  
+values is an AFValues collection representing the AFValues of interest. 
+local
+
+##### Example:  
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
+#### Setting A Value At A Specific Time
+##### Decription:  
+
+Returns AFValues with values generated from a random walk model.
+
+##### Usage: 
+```C#
+private static AFValues SetValueAtTime(this AFValues values, object newValue, AFTime timeStamp)
+```
+
+##### Parameters:  
+values is an AFValues collection representing the AFValues of interest.
+newValue is an object the represents the value to be set at a specific time stamp.
+timeStamp is an AFTime that represents the time stamp corresponding to object newValue.
+
+##### Example:  
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
+#### Finding The Minimum Value
+##### Decription:  
+
+Returns AFValues with the smallest value.
+
+##### Usage: 
+```C#
+public static AFValues Min(this AFValues values, AFTime timeStamp)
+```
+
+##### Parameters:  
+values is an AFValues collection representing the AFValues of interest.
+timeStamp is an AFTime that represents the time stamp that will correspond with the minimum value.
+
+##### Example:  
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
+#### Finding The Maximum Value
+##### Decription:  
+
+Returns AFValues with the largest value.
+
+##### Usage: 
+```C#
+public static AFValues Max(this AFValues values, Local local, AFTime timeStamp)
+```
+
+##### Parameters:  
+values is an AFValues collection representing the AFValues of interest.
+local  
+timeStamp is an AFTime that represents the time stamp that will correspond with the maximum value.
+
+##### Example:  
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
+#### Finding The Median (indexed by half of the total number of values)
+##### Decription:  
+
+Sorts AFValues values and returns the value indexed by half of the total number of values.
+
+##### Usage: 
+```C#
+public static AFValues PositionMedian(this AFValues values, AFTime timeStamp)
+```
+
+##### Parameters:  
+values is an AFValues collection representing the AFValues of interest.
+timeStamp is an AFTime that represents the time stamp that will correspond with the returned value.
+
+##### Example:  
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
+#### Finding the Median
+##### Decription:  
+
+Sorts the AFValues values and returns the median.
+
+##### Usage: 
+```C#
+public static AFValues Median(this AFValues values, AFTime timeStamp)
+```
+
+##### Parameters:  
+values is an AFValues collection representing the AFValues of interest. 
+timeStamp is an AFTime that represents the time stamp that will correspond with the returned value.
+
+##### Example:  
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
