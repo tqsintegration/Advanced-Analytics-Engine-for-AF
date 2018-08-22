@@ -81,8 +81,6 @@ Mappings to the element attributes is perfomed using the Local object:
 
 | PI-ACE  | AF Advanced Calculation Engine |
 | ------------- | ------------- |
-| PI-ACE  | AF Advanced Calculation Engine |
-| ------------- | ------------- |
 |ACE_Raw_Date = GetPIACEPoint("ACE_Raw_Date")|ACE_Raw_Date = _local.Attributes`["ACE_Raw_Date"`]|
 |ACE_Raw_Phosphate = GetPIACEPoint("ACE_Raw_Phosphate")|ACE_Raw_Phosphate = _local.Attributes`["ACE_Raw_Phosphate"`]|
 |ACE_Raw_Glucose = GetPIACEPoint("ACE_Raw_Glucose") |ACE_Raw_Glucose = _local.Attributes`["ACE_Raw_Glucose"`] |
