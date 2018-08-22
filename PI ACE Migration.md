@@ -1,5 +1,5 @@
 
-# PI ACE Migration
+# PI ACE Code Migration
 
-Advanced-Calculation-Engine-for-AF is a tool that allows developers to create and manage calculations using data from Osisoft's PI System within PI Asset Framework.
+The Advanced Caclulation Engine for AF\EF provides the capability to execute C# and VB.Net code through runtime compilation. The engine can be used to migrate [PI-ACE](http://example.com/ "Title") projects to the AF system. 
 
