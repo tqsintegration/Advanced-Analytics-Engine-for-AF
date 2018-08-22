@@ -232,3 +232,137 @@ namespace AFCalculationEngine
     }
 }
 ```
+#### Getting Compressed AFValues
+```C#
+using OSIsoft.AF.Asset;
+using OSIsoft.AF.Time;
+using AACE.Data.Model;
+using AACE.Extension;
+using System;
+
+namespace AFCalculationEngine
+{
+    public class RealTime
+    {
+        private Local _local;
+		public RealTime(Local local)
+        {
+            _local=local;
+        }
+        public AFValues Update(Context context, AFTimeRange timeRange,
+			int n, AFValues values)
+        {
+            return Data.GetCompressed(Data.GetSinusoidValues(timeRange,n,100,4,
+				TimeSpan.FromSeconds(0)), _local);
+        }
+    }
+}
+```
+
+#### Finding The Minimum Value
+```C#
+using OSIsoft.AF.Asset;
+using OSIsoft.AF.Time;
+using AACE.Data.Model;
+using AACE.Extension;
+using System;
+
+namespace AFCalculationEngine
+{
+    public class RealTime
+    {
+        private Local _local;
+		public RealTime(Local local)
+        {
+            _local=local;
+        }
+        public AFValues Update(Context context, AFTimeRange timeRange,
+			int n, AFValues values)
+        {
+            return Data.Min(Data.GetSinusoidValues(timeRange,n,100,4,
+				TimeSpan.FromSeconds(0)), AFTime.Now);
+        }
+    }
+}
+```
+
+#### Finding The Maximum Value
+```C#
+using OSIsoft.AF.Asset;
+using OSIsoft.AF.Time;
+using AACE.Data.Model;
+using AACE.Extension;
+using System;
+
+namespace AFCalculationEngine
+{
+    public class RealTime
+    {
+        private Local _local;
+		public RealTime(Local local)
+        {
+            _local=local;
+        }
+        public AFValues Update(Context context, AFTimeRange timeRange,
+			int n, AFValues values)
+        {
+            return Data.Max(Data.GetSinusoidValues(timeRange,n,100,4,
+				TimeSpan.FromSeconds(0)), _local, AFTime.Now);
+        }
+    }
+}
+```
+
+#### Finding The Median (indexed by half of the total number of values)
+```C#
+using OSIsoft.AF.Asset;
+using OSIsoft.AF.Time;
+using AACE.Data.Model;
+using AACE.Extension;
+using System;
+
+namespace AFCalculationEngine
+{
+    public class RealTime
+    {
+        private Local _local;
+		public RealTime(Local local)
+        {
+            _local=local;
+        }
+        public AFValues Update(Context context, AFTimeRange timeRange,
+			int n, AFValues values)
+        {
+            return Data.PositionMedian(Data.GetSinusoidValues(timeRange,n,100,4,
+				TimeSpan.FromSeconds(0)), AFTime.Now);
+        }
+    }
+}
+```
+
+#### Finding the Median
+```C#
+using OSIsoft.AF.Asset;
+using OSIsoft.AF.Time;
+using AACE.Data.Model;
+using AACE.Extension;
+using System;
+
+namespace AFCalculationEngine
+{
+    public class RealTime
+    {
+        private Local _local;
+		public RealTime(Local local)
+        {
+            _local=local;
+        }
+        public AFValues Update(Context context, AFTimeRange timeRange,
+			int n, AFValues values)
+        {
+            return Data.Median(Data.GetSinusoidValues(timeRange,n,100,4,
+				TimeSpan.FromSeconds(0)), AFTime.Now);
+        }
+    }
+}
+```
