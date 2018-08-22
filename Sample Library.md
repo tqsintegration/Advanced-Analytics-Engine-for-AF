@@ -3,12 +3,12 @@
 
 1) Create Gaussian Noise
 
-using OSIsoft.AF.Asset;
-using OSIsoft.AF.Time;
-using AACE.Data.Model;
-using AACE.Extension;
-using System;
-
+using OSIsoft.AF.Asset;</br>
+using OSIsoft.AF.Time;</br>
+using AACE.Data.Model;</br>
+using AACE.Extension;</br>
+using System;</br>
+</br>
 namespace AFCalculationEngine
 {
     public class RealTime
