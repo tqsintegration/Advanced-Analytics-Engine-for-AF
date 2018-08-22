@@ -12,8 +12,6 @@ To allow calls to the legacy system, functions to the MDB and PIBatchDB have bee
 
 Here some quick links to navigate the section:
 
-[Migrate Imports](#Region: Imports)
-
 
 Every Advanced Calculation Engine method will have the following format
 ```vb.net
@@ -137,3 +135,9 @@ End Sub
 These procedures are no longer required. If reuqired, dispoing of managed and unmanaged resoruce can be implemented using the IDisposable pattern.
 
 ## PI ACE specific Properties, Methods and Functions
+
+For all PI-SDK functions that 
+
+
+| PI-ACE  | AF Advanced Calculation Engine |
+| ------------- | ------------- |
