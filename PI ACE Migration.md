@@ -22,8 +22,9 @@ Imports System
 
 Namespace AFCalculationEngine
     Public Class RealTime
+#Region "Private Fields"
         Private _local As Local
-
+#End Region
         Public Sub New(ByVal local As Local)
             _local = local
         End Sub
@@ -38,14 +39,23 @@ End Namespace
 The namespace, class, method name and the parameter list will be always the same.
 
 ## Region: Imports
-The namespaces have changed from PI-ACE - please use the new namespaces for import.<\br>
+The namespaces have changed from PI-ACE - please use the new namespaces for import.
 
-| PI-ACE  | AF Advanced Calculation Engine |
+
+| PI-ACE  | AF Advanced Calculation Engine|
 | ------------- | ------------- |
-| Imports OSIsoft.PI.ACE  |Imports OSIsoft.AF.Asset  |
+| Imports OSIsoft.PI.ACE  |Imports OSIsoft.AF.Asset|
 ||Imports OSIsoft.AF.Time|
 ||Imports AACE.Data.Model|
 ||Imports AACE.Extension|
 ||Imports System|
 
+## Region: Private Fields
+| PI-ACE  | AF Advanced Calculation Engine |
+| ------------- | ------------- |
+|Private ACE_Raw_Date As PIACEPoint|Private ACE_Raw_Date As AFAttribute|
+|Private ACE_Raw_Phosphate As PIACEPoint|Private ACE_Raw_Phosphate As AFAttribute|
+|Private ACE_Raw_Glucose As PIACEPoint|Private ACE_Raw_Glucose As AFAttribute|
+|Private ACE_Raw_Acetate As PIACEPoint|Private ACE_Raw_Acetate As AFAttribute|
+||Private _local As Local
 
