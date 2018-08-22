@@ -9,6 +9,9 @@ Advanced-Calculation-Engine-for-AF is a tool that allows developers to create an
 This Github repository is to host samples, documentation and to allow TQS Integration to publish ongoing code samples that users might wish to test or deploy. The Advanced Calculation Engine for AF is a licensed product, and for pricing details on purchasing the software, please contact us at [TQS Integration](mailto:sales@tqsintegration.com), or visit our [website](www.tqsintegration.com) for further details. 
 
 **Table of Contents**
+* [Code Documentation](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Code%20Documentation.md)
+* [PI ACE Migration](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/PI%20ACE%20Migration.md)
+* [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md)
 
 
 ## Getting Started
