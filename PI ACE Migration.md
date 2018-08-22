@@ -33,7 +33,9 @@ Namespace AFCalculationEngine
 
         Public Function Update(ByVal context As Context, ByVal timeRange As AFTimeRange, 
             ByVal n As Integer, ByVal values As AFValues) As AFValues
+#Region "Function"
             Return Data.GetHeartBeatValues(timeRange,n)
+#End Region
         End Function
     End Class
 End Namespace
@@ -73,7 +75,7 @@ PI Alias = AF Attribute
 PI Ace initialized fields in the following sub procedure:
 ```vb.net
 Protected Overrides Sub InitializePIACEPoints()
-
+...
 End Sub
 ```
 In the Advanced Caclulation Engine there is simply a construcotr that can be used to initialize private fields.
@@ -85,3 +87,35 @@ Mappings to the element attributes is perfomed using the Local object:
 |ACE_Raw_Phosphate = GetPIACEPoint("ACE_Raw_Phosphate")|ACE_Raw_Phosphate = _local.Attributes`["ACE_Raw_Phosphate"`]|
 |ACE_Raw_Glucose = GetPIACEPoint("ACE_Raw_Glucose") |ACE_Raw_Glucose = _local.Attributes`["ACE_Raw_Glucose"`] |
 |ACE_Raw_Acetate = GetPIACEPoint("ACE_Raw_Acetate")|ACE_Raw_Acetate = _local.Attributes`["ACE_Raw_Acetate"`]|
+
+## Region: Private Fields
+
+PI ACE used the following sub procedure to define calculations:
+
+```vb.net
+Public Overrides Sub ACECalculations()
+...
+End Sub
+```
+
+This code can be moved in the function declaration.
+
+## Module dependent Initializationa and Termination
+Each PI ACE module contains the following startup and tear down routines:
+
+```vb.net
+'
+' User-written module dependent initialization code
+'
+Public Sub ModuleDependentInitialization()
+End Sub
+
+'
+' User-written module dependent termination code
+'
+Public Sub ModuleDependentTermination()
+End Sub
+```
+
+These procedures are no longer required. If reuqired, dispoing of managed and unmanaged resoruce can be implemented using the IDisposable pattern.
+
