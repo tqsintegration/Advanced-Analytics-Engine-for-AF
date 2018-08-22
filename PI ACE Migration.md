@@ -26,7 +26,9 @@ Namespace AFCalculationEngine
         Private _local As Local
 #End Region
         Public Sub New(ByVal local As Local)
+#Region "Constructor"
             _local = local
+#End Region
         End Sub
 
         Public Function Update(ByVal context As Context, ByVal timeRange As AFTimeRange, 
@@ -51,6 +53,13 @@ The namespaces have changed from PI-ACE - please use the new namespaces for impo
 ||Imports System|
 
 ## Region: Private Fields
+
+PIACEPoint was a way to map module specific aliases to a field. This data type has been replaced by AF Attributes. It follow the following scheme:
+
+PI Module = AF Element
+PI Alias = AF Attribute
+
+
 | PI-ACE  | AF Advanced Calculation Engine |
 | ------------- | ------------- |
 |Private ACE_Raw_Date As PIACEPoint|Private ACE_Raw_Date As AFAttribute|
@@ -59,3 +68,22 @@ The namespaces have changed from PI-ACE - please use the new namespaces for impo
 |Private ACE_Raw_Acetate As PIACEPoint|Private ACE_Raw_Acetate As AFAttribute|
 ||Private _local As Local
 
+## Region: Constructor
+
+PI Ace initialized fields in the following sub procedure:
+```vb.net
+Protected Overrides Sub InitializePIACEPoints()
+
+End Sub
+```
+In the Advanced Caclulation Engine there is simply a construcotr that can be used to initialize private fields.
+Mappings to the element attributes is perfomed using the Local object:
+
+| PI-ACE  | AF Advanced Calculation Engine |
+| ------------- | ------------- |
+| PI-ACE  | AF Advanced Calculation Engine |
+| ------------- | ------------- |
+|ACE_Raw_Date = GetPIACEPoint("ACE_Raw_Date")|ACE_Raw_Date = _local.Attributes`["ACE_Raw_Date"`]|
+|ACE_Raw_Phosphate = GetPIACEPoint("ACE_Raw_Phosphate")|ACE_Raw_Phosphate = _local.Attributes`["ACE_Raw_Phosphate"`]|
+|ACE_Raw_Glucose = GetPIACEPoint("ACE_Raw_Glucose") |ACE_Raw_Glucose = _local.Attributes`["ACE_Raw_Glucose"`] |
+|ACE_Raw_Acetate = GetPIACEPoint("ACE_Raw_Acetate")|ACE_Raw_Acetate = _local.Attributes`["ACE_Raw_Acetate"`]|
