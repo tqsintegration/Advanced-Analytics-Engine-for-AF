@@ -110,7 +110,7 @@ Public Overrides Sub ACECalculations()
 End Sub
 ```
 
-This code can be moved in the function declaration.
+This code can be moved into the function declaration.
 
 ## Module dependent Initializationa and Termination
 Each PI ACE module contains the following startup and tear down routines:
