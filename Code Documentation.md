@@ -1,5 +1,7 @@
 # Code Documentation
 
+The following are functions built into the AACE.Extension Data class library.
+
 #### Creating Constant Values
 ##### Decription:  
 
@@ -136,7 +138,7 @@ Returns AFValues with values generated from a rectangular wave.
 
 ##### Usage: 
 ```C#
-GetRectangularValues(AFTimeRange timeRange, int numberOfValues, TimeSpan zeroSpan, TimeSpan oneSpan, double height, TimeSpan shift, AFAttribute attribute = null)
+public static GetRectangularValues(AFTimeRange timeRange, int numberOfValues, TimeSpan zeroSpan, TimeSpan oneSpan, double height, TimeSpan shift, AFAttribute attribute = null)
 ```
 
 ##### Parameters:  
@@ -175,17 +177,7 @@ attribute is an AFAttribute. (Currently set to null)
 
 Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
 
-
-
-
-
-
-
-
-
-
-
-
+The following functions are built-in to the AACE.Extension Data class library.
 
 #### Getting Compresses AFValues
 ##### Decription:  
@@ -199,7 +191,7 @@ public static AFValues GetCompressed(this AFValues values, Local local)
 
 ##### Parameters:  
 values is an AFValues collection representing the AFValues of interest. 
-local
+local is a Local.
 
 ##### Example:  
 
@@ -254,7 +246,7 @@ public static AFValues Max(this AFValues values, Local local, AFTime timeStamp)
 
 ##### Parameters:  
 values is an AFValues collection representing the AFValues of interest.
-local  
+local is a Local.
 timeStamp is an AFTime that represents the time stamp that will correspond with the maximum value.
 
 ##### Example:  
@@ -273,7 +265,7 @@ public static AFValues PositionMedian(this AFValues values, AFTime timeStamp)
 
 ##### Parameters:  
 values is an AFValues collection representing the AFValues of interest.
-timeStamp is an AFTime that represents the time stamp that will correspond with the returned value.
+timeStamp is an AFTime that represents the time stamp that will correspond with the returned value.  
 
 ##### Example:  
 
@@ -291,7 +283,131 @@ public static AFValues Median(this AFValues values, AFTime timeStamp)
 
 ##### Parameters:  
 values is an AFValues collection representing the AFValues of interest. 
-timeStamp is an AFTime that represents the time stamp that will correspond with the returned value.
+timeStamp is an AFTime that represents the time stamp that will correspond with the returned value.  
+
+##### Example:  
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
+The following are built into the AACE.Extension Operator class library.
+
+#### Finding the Exponentially Weighed Moving Average (EMA)
+##### Decription:  
+
+Calculates and returns the exponentially weighed moving average.
+
+##### Usage: 
+```C#
+EMA(TimeSpan tau, EmaType Type).Calculate(AFValue dv)
+```
+
+##### Parameters:  
+tau is a TimeSpan that represents the length of the rolling time window.  
+Type is an EmaType that representes the type of interpolation method to be used.  
+dv is an AFValue that represents the operand.  
+
+##### Example:  
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
+#### Finding the Iterated Exponentially Weighed Moving Average
+##### Decription:  
+
+Calculates and returns the iterated exponentially weighed moving average.
+
+##### Usage: 
+```C#
+NEMA(TimeSpan tau, EmaType Type, int n).Calculate(AFValue dv)
+```
+
+##### Parameters:  
+tau is a TimeSpan that represents the length of the rolling time window.  
+Type is an EmaType that representes the type of interpolation method to be used.  
+n is an integer that represents the number of iterations to be performed.  
+dv is an AFValue that represents the operand.  
+
+##### Example:  
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
+#### Finding the Moving Average
+##### Decription:  
+
+Calculates and returns the moving average.
+
+##### Usage: 
+```C#
+MA(TimeSpan tau, EmaType Type, int n).Calculate(AFValue dv)
+```
+
+##### Parameters:  
+tau is a TimeSpan that represents the length of the rolling time window.  
+Type is an EmaType that representes the type of interpolation method to be used.  
+n is an integer that represents the number of iterations to be performed.  
+dv is an AFValue that represents the operand.  
+
+##### Example:  
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
+#### Finding the Moving Norm
+##### Decription:  
+
+Calculates and returns the moving norm.
+
+##### Usage: 
+```C#
+MNORM(TimeSpan tau, EmaType Type, int n, int p).Calculate(AFValue dv)
+```
+
+##### Parameters:  
+tau is a TimeSpan that represents the length of the rolling time window.  
+Type is an EmaType that representes the type of interpolation method to be used.  
+n is an integer that represents the number of iterations to be performed.  
+dv is an AFValue that represents the operand.  
+p is an integer that represents the p-moment.  
+
+##### Example:  
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
+#### Finding the Moving Variance
+##### Decription:  
+
+Calculates and returns the moving variance.
+
+##### Usage: 
+```C#
+MVAR(TimeSpan tau, EmaType Type, int n, int p).Calculate(AFValue dv)
+```
+
+##### Parameters:  
+tau is a TimeSpan that represents the length of the rolling time window.  
+Type is an EmaType that representes the type of interpolation method to be used.  
+n is an integer that represents the number of iterations to be performed.  
+dv is an AFValue that represents the operand.  
+p is an integer that represents the p-moment.  
+
+##### Example:  
+
+Please visit the [Sample Library](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Sample%20Library.md) for an example.
+
+#### Finding the Moving Standard Deviation
+##### Decription:  
+
+Calculates and returns the moving standard deviation.
+
+##### Usage: 
+```C#
+MSD(TimeSpan tau, EmaType Type, int n, int p).Calculate(AFValue dv)
+```
+
+##### Parameters:  
+tau is a TimeSpan that represents the length of the rolling time window.  
+Type is an EmaType that representes the type of interpolation method to be used.  
+n is an integer that represents the number of iterations to be performed.  
+dv is an AFValue that represents the operand.  
+p is an integer that represents the p-moment.  
 
 ##### Example:  
 
