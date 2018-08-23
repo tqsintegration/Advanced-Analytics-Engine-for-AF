@@ -14,7 +14,7 @@ Here some quick links to navigate the section:
 
 
 Every Advanced Calculation Engine method will have the following format
-```aspx-vb
+```vbnet
 #Region "Imports"
     Imports OSIsoft.AF.Asset
     Imports OSIsoft.AF.Time
