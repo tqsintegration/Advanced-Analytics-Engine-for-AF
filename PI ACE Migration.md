@@ -5,7 +5,7 @@ The Advanced Calculation Engine for AF\EF provides the capability to execute C# 
 
 Due to the differences in the underlying Software Development Kits SDK's ([PI-SDK](https://techsupport.osisoft.com/Products/Other-Products/PI-SDK/Overview "OSIsoft Web Site") vs [AF-SDK](https://techsupport.osisoft.com/Documentation/PI-AF-SDK/html/1a02af4c-1bec-4804-a9ef-3c7300f5e2fc.htm "OSIsoft Web Site")) the migration is not 1:1 and some changes are required.
 
-OSIsoft has transitioned most PI-SDK functionality into the AF-SDF with two exceptions:
+OSIsoft has transitioned most PI-SDK functionality into the AF-SDK with two exceptions:
 1) Module Database (MDB), this legacy system provided a basic equipment or context model and has been replaced by the Asset Framework (AF)
 2) Batch Database (PIBatchDB) is the predecessor of the Event Frame Database and allowed batch, unit batch and sub batch creation
 To allow calls to the legacy system, functions to the MDB and PIBatchDB have been wrapped into NET classes that only have an AF-SDK dependency.
