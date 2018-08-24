@@ -16,7 +16,7 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		public RealTime(Local local)
+	public RealTime(Local local)
         {
             _local=local;
         }
@@ -42,7 +42,7 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		public RealTime(Local local)
+	public RealTime(Local local)
         {
             _local=local;
         }
@@ -68,7 +68,7 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		public RealTime(Local local)
+	public RealTime(Local local)
         {
             _local=local;
         }
@@ -94,7 +94,7 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		public RealTime(Local local)
+	public RealTime(Local local)
         {
             _local=local;
         }
@@ -121,7 +121,7 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		public RealTime(Local local)
+	public RealTime(Local local)
         {
             _local=local;
         }
@@ -148,7 +148,7 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		public RealTime(Local local)
+	public RealTime(Local local)
         {
             _local=local;
         }
@@ -181,7 +181,7 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		public RealTime(Local local)
+	public RealTime(Local local)
         {
             _local=local;
 
@@ -189,10 +189,10 @@ namespace AFCalculationEngine
         public AFValues Update(Context context, AFTimeRange timeRange,
 			int n, AFValues values)
         {
-			var newValues=Data.GetRectangularValues(
-				timeRange,
-				n,TimeSpan.FromMinutes(10),TimeSpan.FromMinutes(5),100,
-				TimeSpan.Zero,null);
+	    var newValues=Data.GetRectangularValues(
+		timeRange,
+		n,TimeSpan.FromMinutes(10),TimeSpan.FromMinutes(5),100,
+		TimeSpan.Zero,null);
             return  newValues;
         }
     }
@@ -213,20 +213,20 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		private double _previousValue;
-		public RealTime(Local local)
+	private double _previousValue;
+	public RealTime(Local local)
         {
             _local=local;
-			_previousValue=0;
+	    _previousValue=0;
         }
         public AFValues Update(Context context, AFTimeRange timeRange,
 			int n, AFValues values)
         {
-			var newValues=Data.GetRandomWalkValues(
-				timeRange,
-				n,
-			_previousValue,0,100,null);
-			_previousValue=Convert.ToDouble(newValues.Last().Value.ToString());
+	    var newValues=Data.GetRandomWalkValues(
+		timeRange,
+		n,
+	    _previousValue,0,100,null);
+	    _previousValue=Convert.ToDouble(newValues.Last().Value.ToString());
             return  newValues;
         }
     }
@@ -245,7 +245,7 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		public RealTime(Local local)
+	public RealTime(Local local)
         {
             _local=local;
         }
@@ -272,7 +272,7 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		public RealTime(Local local)
+	public RealTime(Local local)
         {
             _local=local;
         }
@@ -299,7 +299,7 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		public RealTime(Local local)
+	public RealTime(Local local)
         {
             _local=local;
         }
@@ -326,7 +326,7 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		public RealTime(Local local)
+	public RealTime(Local local)
         {
             _local=local;
         }
@@ -353,7 +353,7 @@ namespace AFCalculationEngine
     public class RealTime
     {
         private Local _local;
-		public RealTime(Local local)
+	public RealTime(Local local)
         {
             _local=local;
         }
@@ -362,6 +362,77 @@ namespace AFCalculationEngine
         {
             return Data.Median(Data.GetSinusoidValues(timeRange,n,100,4,
 				TimeSpan.FromSeconds(0)), AFTime.Now);
+        }
+    }
+}
+```
+#### Finding the Exponentially Weighed Moving Average (EMA)
+```C#
+using OSIsoft.AF.Asset;
+using OSIsoft.AF.Time;
+using AACE.Data.Model;
+using AACE.Extension;
+using System;
+
+namespace AFCalculationEngine
+{
+    public class RealTime
+    {
+        private Local _local;
+	private AACE.Extension.Operator.EMA _ema;
+	public RealTime(Local local)
+        {
+            _local = local;
+	    _ema = new AACE.Extension.Operator.EMA(TimeSpan.FromMinutes(1),
+		    AACE.Extension.Operator.EmaType.Interpolated);
+        }
+        public AFValues Update(Context context, AFTimeRange timeRange, int n, 
+            AFValues values)
+        {
+	    var newValues=Data.GetSinusoidValues(timeRange,n,100,4,
+		TimeSpan.FromSeconds(0));
+	    AFValues result = new AFValues();
+	    foreach(var value in newValues )
+	    {
+		result.Add(_ema.Calculate(value)[0].Clone());
+	    }
+            return result;
+        }
+    }
+}
+```
+
+#### Finding the Iterated Exponentially Weighed Moving Average
+```C#
+using OSIsoft.AF.Asset;
+using OSIsoft.AF.Time;
+using AACE.Data.Model;
+using AACE.Extension;
+using System;
+
+namespace AFCalculationEngine
+{
+    public class RealTime
+    {
+        private Local _local;
+	private AACE.Extension.Operator.NEMA _nema;
+	public RealTime(Local local)
+        {
+            _local = local;
+	    _nema = new AACE.Extension.Operator.NEMA(TimeSpan.FromMinutes(1),
+				AACE.Extension.Operator.EmaType.Interpolated, 5);
+        }
+        public AFValues Update(Context context, AFTimeRange timeRange, int n, 
+            AFValues values)
+        {
+	    var newValues=Data.GetSinusoidValues(timeRange,n,100,4,
+		TimeSpan.FromSeconds(0));
+	    AFValues result = new AFValues();
+	    foreach(var value in newValues )
+	    {
+		result.Add(_nema.Calculate(value)[0].Clone());
+	    }
+            return result;
         }
     }
 }
