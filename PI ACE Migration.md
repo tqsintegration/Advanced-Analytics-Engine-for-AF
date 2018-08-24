@@ -132,7 +132,7 @@ Public Sub ModuleDependentTermination()
 End Sub
 ```
 
-These procedures are no longer required. If reuqired, dispoing of managed and unmanaged resoruce can be implemented using the IDisposable pattern.
+These procedures are no longer required. If required, dispoing of managed and unmanaged resource can be implemented using the IDisposable pattern.
 
 ## PI ACE specific Properties, Methods and Functions
 
