@@ -141,3 +141,14 @@ For all PI-SDK functions that
 
 | PI-ACE  | AF Advanced Calculation Engine |
 | ------------- | ------------- |
+|Inherits PIACENetClassModule | not required|
+|Example As PIACEPoint | Example as AFAttribute|
+|Dim server As PISDK.Server | Dim server as LegacyServer|
+|Dim nvAttrs As PISDKCommon.NamedValue| not required|
+|Dim pisdk As New PISDK.PISDK| not required|
+|Dim aliases As PISDK.PIAliases | Dim aliases as AFAttributes|
+|Dim alias As PISDK.PIAlias | Dim alias As AFAttribute|
+|Dim value As PISDK.PIValue | Dim value As AFValue|
+|Dim values As New PISDK.PIValues| Dim values as new AFValues|
+|Dim tag As PISDK.PIPoint| Dim tag as PIPoint|
+
