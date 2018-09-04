@@ -1,6 +1,6 @@
-# Advanced-Calculation-Engine-for-AF
+# Advanced-Analytics-Engine-for-AF
 
-Advanced-Calculation-Engine-for-AF is a tool that allows developers to create and manage calculations using data from Osisoft's PI System within PI Asset Framework.
+Advanced-Analytics-Engine-for-AF is a tool that allows developers to create and manage calculations using data from Osisoft's PI System within PI Asset Framework.
 
 <p align="center">
   <img src="images/Demo75.gif">
