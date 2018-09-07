@@ -6,7 +6,7 @@ Advanced-Analytics-Engine-for-AF is a tool that allows developers to create and 
   <img src="images/Demo75.gif">
 </p>
 
-This Github repository is to host samples, documentation and to allow TQS Integration to publish ongoing code samples that users might wish to test or deploy. The Advanced Calculation Engine for AF is a licensed product, and for pricing details on purchasing the software, please contact us at [TQS Integration](mailto:sales@tqsintegration.com), or visit our [website](www.tqsintegration.com) for further details. 
+This Github repository is to host samples, documentation and to allow TQS Integration to publish ongoing code samples that users might wish to test or deploy. The Advanced Analytics Engine for AF is a licensed product, and for pricing details on purchasing the software, please contact us at [TQS Integration](mailto:sales@tqsintegration.com), or visit our [website](www.tqsintegration.com) for further details. 
 
 **Table of Contents**
 * [Code Documentation](https://github.com/tqsintegration/Advanced-Calculation-Engine-for-AF/blob/master/Code%20Documentation.md)
@@ -16,12 +16,13 @@ This Github repository is to host samples, documentation and to allow TQS Integr
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine. See deployment for notes on how to deploy Advanced-Calculation-Engine-for-AF within PI System Explorer.
+These instructions will get you a copy of the project up and running on your local machine. See deployment for notes on how to deploy Advanced-Analytics-Engine-for-AF within PI System Explorer.
 
 ### Prerequisites
 
 * PI AF Client 2015 R2. Installation instructions can be found [here](https://livelibrary.osisoft.com).
 * .NET Framework 4.5.2
+Note: The LegacyBatch class also requires an Installation of the latest PI-SDK library.
 
 ### Installing
 
@@ -34,7 +35,7 @@ Follow the step-by-step procedure below to install the software.
 
 ## Deployment
 
-The AF Advanced Calculation Engine may be accessed via the PI System Explorer by configuring the attribute of an element to be referenced as a AF Advanced Calculation Engine data reference. Click on settings to access the user-friendly graphical user interface.
+The AF Advanced Analytics Engine may be accessed via the PI System Explorer by configuring the attribute of an element to be referenced as a AF Advanced Analytics Engine data reference. Click on settings to access the user-friendly graphical user interface.
 
 ## Graphical User Interface
 
@@ -96,9 +97,9 @@ We welcome everyone to share enhancement requests, issues and contributions. Whi
 TQS Integration supports and licenses software developed for regulated industries, and as such, all software development is performed under our strict software development lifecycle process. For details, please visit our website [TQSIntegration](https://www.tqsintegration.com/).
 
 ## Authors
-TQS Integration (https://www.tqsintegration.com/)
+TQS Integration (https://www.tqsintegration.com/)  
 Holger Amort  
-Pablo Gomez
+Pablo Gomez  
 
 ## License
 Copyright 2018 TQS Integration, LLC.
