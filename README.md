@@ -22,7 +22,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 * PI AF Client 2015 R2. Installation instructions can be found [here](https://livelibrary.osisoft.com).
-* .NET Framework 4.5.2
+* .NET Framework 4.5.2  
 __Note:__ The LegacyBatch class requires an Installation of the latest PI-SDK library.
 
 ### Installing
