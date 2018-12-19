@@ -27,18 +27,18 @@ Namespace AFCalculationEngine
     Public Class RealTime
 #Region "Private Fields"
         Private _local As Local
-        Private ACE_Raw_Date As AFAttribute
-        Private ACE_Raw_Phosphate As AFAttribute
-        Private ACE_Raw_Glucose As AFAttribute
-        Private ACE_Raw_Acetate As AFAttribute
+        Private Recorded_SampleDateTime As AFAttribute
+        Private SampleResult_Phosphate As AFAttribute
+        Private SampleResult_Glucose As AFAttribute
+        Private SampleResult_Acetate As AFAttribute
 #End Region
         Public Sub New(ByVal local As Local)
 #Region "Constructor"
             _local = local
-            ACE_Raw_Date = _local.Attributes`["ACE_Raw_Date"`]
-            ACE_Raw_Phosphate = _local.Attributes`["ACE_Raw_Phosphate"`]
-            ACE_Raw_Glucose = _local.Attributes`["ACE_Raw_Glucose"`]
-            ACE_Raw_Acetate = _local.Attributes`["ACE_Raw_Acetate"`]
+            Recorded_SampleDateTime = _local.Attributes`["Recorded_SampleDateTime"`]
+            SampleResult_Phosphate = _local.Attributes`["SampleResult_Phosphate"`]
+            SampleResult_Glucose = _local.Attributes`["SampleResult_Glucose"`]
+            SampleResult_Acetate = _local.Attributes`["SampleResult_Acetate"`]
 #End Region
         End Sub
 
@@ -78,10 +78,10 @@ PI Alias = AF Attribute
 | PI-ACE  | AF Advanced Calculation Engine |
 | ------------- | ------------- |
 ||Private _local As Local
-|Private ACE_Raw_Date As PIACEPoint|Private ACE_Raw_Date As AFAttribute|
-|Private ACE_Raw_Phosphate As PIACEPoint|Private ACE_Raw_Phosphate As AFAttribute|
-|Private ACE_Raw_Glucose As PIACEPoint|Private ACE_Raw_Glucose As AFAttribute|
-|Private ACE_Raw_Acetate As PIACEPoint|Private ACE_Raw_Acetate As AFAttribute|
+|Private Recorded_SampleDateTime As PIACEPoint|Private Recorded_SampleDateTime As AFAttribute|
+|Private SampleResult_Phosphate As PIACEPoint|Private SampleResult_Phosphate As AFAttribute|
+|Private SampleResult_Glucose As PIACEPoint|Private SampleResult_Glucose As AFAttribute|
+|Private SampleResult_Acetate As PIACEPoint|Private SampleResult_Acetate As AFAttribute|
 
 
 ## Region: Constructor
@@ -98,10 +98,10 @@ Mappings to the element attributes is performed using the Local object:
 | PI-ACE  | AF Advanced Calculation Engine |
 | ------------- | ------------- |
 ||_local = local|
-|ACE_Raw_Date = GetPIACEPoint("ACE_Raw_Date")|ACE_Raw_Date = _local.Attributes`["ACE_Raw_Date"`]|
-|ACE_Raw_Phosphate = GetPIACEPoint("ACE_Raw_Phosphate")|ACE_Raw_Phosphate = _local.Attributes`["ACE_Raw_Phosphate"`]|
-|ACE_Raw_Glucose = GetPIACEPoint("ACE_Raw_Glucose") |ACE_Raw_Glucose = _local.Attributes`["ACE_Raw_Glucose"`]|
-|ACE_Raw_Acetate = GetPIACEPoint("ACE_Raw_Acetate")|ACE_Raw_Acetate = _local.Attributes`["ACE_Raw_Acetate"`]|
+|Recorded_SampleDateTime = GetPIACEPoint("Recorded_SampleDateTime")|Recorded_SampleDateTime = _local.Attributes`["Recorded_SampleDateTime"`]|
+|SampleResult_Phosphate = GetPIACEPoint("SampleResult_Phosphate")|SampleResult_Phosphate = _local.Attributes`["SampleResult_Phosphate"`]|
+|SampleResult_Glucose = GetPIACEPoint("SampleResult_Glucose") |SampleResult_Glucose = _local.Attributes`["SampleResult_Glucose"`]|
+|SampleResult_Acetate = GetPIACEPoint("SampleResult_Acetate")|SampleResult_Acetate = _local.Attributes`["SampleResult_Acetate"`]|
 
 ## Region: Private Fields
 
