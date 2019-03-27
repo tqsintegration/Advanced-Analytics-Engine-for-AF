@@ -67,7 +67,7 @@ Calculates continuous moving norm with window size 30 sec.:
             var p = 2;
             
             var cnorm = new Operator.CNorm(windowSize, Operator.EmaType.Interpolated, n);
-            var values = cma.Calculate(value);
+            var values = cnorm.Calculate(value);
 ```
 
 ## Continuous Moving Variance (CVar)
