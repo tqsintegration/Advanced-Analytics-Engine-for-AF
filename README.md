@@ -21,7 +21,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* PI AF Client 2015 R2. Installation instructions can be found [here](https://livelibrary.osisoft.com).
+* Minimum PI AF Client 2015 R2. Installation instructions can be found [here](https://livelibrary.osisoft.com).
 * .NET Framework 4.5.2  
 __Note:__ The LegacyBatch class requires an Installation of the latest PI-SDK library.
 
@@ -44,7 +44,7 @@ The AF Advanced Analytics Engine may be accessed via the PI System Explorer by c
   <img src="images/ControlLayout.JPG">
 </p>
 
-* **Insert Programming Language Button** allows the user to specify what programming language is going to be used. Currently available languages include C# and VB.NET.
+* **Insert Programming Language Button** allows the user to specify what programming language is going to be used. 
 
 <p align="center">
   <img src="images/LanguageButton75.gif">
@@ -98,12 +98,10 @@ We welcome everyone to share enhancement requests, issues and contributions. Whi
 TQS Integration supports and licenses software developed for regulated industries, and as such, all software development is performed under our strict software development lifecycle process. For details, please visit our website [TQSIntegration](https://www.tqsintegration.com/).
 
 ## Authors
-TQS Integration (https://www.tqsintegration.com/)  
-Holger Amort  
-Pablo Gomez  
+TQS Integration (https://www.tqsintegration.com/)   
 
 ## License
-Copyright 2018 TQS Integration, LLC.
+Copyright 2020 TQS Integration, LLC.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at [LICENSE.md](LICENSE.md).
 
